@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and tables</title>
+</head>
+<body>
+    <main>
+        <header>
+            <article>
+                <h1>Forms and Tables</h1>
+                <hr>
+                <section>
+                    <!-- So all tables get started off with the tag "Table" -->
+                    <!-- A "td" is a single table cell -->
+
+                    <table>
+                        <td>Ostrich</td>
+                        <td>104(230lbs)</td>
+                        <td>no</td>
+                    </table>
+                    <hr>
+                    <!-- A tr is what ensures elements are in a row -->
+                    <!-- so the table should look something like this -->
+                    <table>
+                        <tr>
+                            <td>Ostrich</td>
+                            <td>104(230)</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Somali Ostrich</td>
+                            <td>90(200)</td>
+                            <td>No</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <!-- Table heading is an element that gives tables, well, headings -->
+                    <!-- They look a little like this -->
+                    <table>
+                        <th>Species</th>
+                        <th>Average Weight</th>
+                        <th>Max Weight</th>
+                        <th>Can fly?</th>
+                        <!-- Th elements are in line -->
+                        <tr>
+                            <td>Ostrich</td>
+                            <td>104(230)</td>
+                            <td>156.8(346)</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Somali Ostrich</td>
+                            <td>90(200)</td>
+                            <td>130(287)</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Wild Turkey</td>
+                            <td>13.5(29.8)</td>
+                            <td>39(86)</td>
+                            <td>Yes</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <!-- Now, thead and tbody can be used to partition
+                    the table header/headings from the table body -->
+                    <!-- Check this out: -->
+
+
+                    <table>
+                        <thead>
+                            <th>Species</th>
+                            <th>Average Weight</th>
+                            <th>Max Weight</th>
+                            <th>Can fly?</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ostrich</td>
+                                <td>104(230)</td>
+                                <td>156.8(346)</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Somali Ostrich</td>
+                                <td>90(200)</td>
+                                <td>130(287)</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Wild Turkey</td>
+                                <td>13.5(29.8)</td>
+                                <td>39(86)</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    </tbody>
+
+                    <!-- Further to this, we can set up colspans and 
+                    rowspans so that some table heads can fall 
+                    under other table heads with the spacing between
+                    them provided by the span definition
+                    the colspan attribute provides how wide the table head 
+                    will be while the rowspan will define the table head element's height -->
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Species</th>
+                                <th colspan="2">Weight</th>
+                                <th rowspan="2">Can fly?</th>
+                            </tr>
+                        
+                        <!-- we split the table head in two table rows so that
+                        one of the two that we would like to be an "undertitle"
+                        falls below the other -->
+                        
+                            <tr>
+                                <th>AW</th>
+                                <th>MW</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ostrich</td>
+                                <td>104(230)</td>
+                                <td>156.8(346)</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Somali Ostrich</td>
+                                <td>90(200)</td>
+                                <td>130(287)</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Wild Turkey</td>
+                                <td>13.5(29.8)</td>
+                                <td>39(86)</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    
+                </section>
+            </article>
+        </header>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Refresher.html">Link to first refresher</a>
+                    </li>
+                    <li> 
+                        <a href="refresher_2.html">Link to second refresher</a>
+                    </li>
+                    <li>
+                        <a href="Doing.html">Link to first bit of practice</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="forms.html">Link to what led to this</a>
+                    </li>
+    
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        
+        <section>
+            <article>
+                <title>
+                    <h1>It's forms!!</h1>
+                </title>
+                <hr>
+                <ul>
+                    <li>refers to the part of a document used to give input/submit information</li>
+                    <li>has an action attribute which details where the data should be sent</li>
+                    <li>The method attribute specifies which http method should be used</li>
+                    <li>The forms take input using the "input" elements demarkated as input tags</li>
+                    <li>There are more than 20 different input types each of which alter the type of input dramatically</li>
+                    <li>to change the type, you use the "type" attribute</li>
+                    <li>input tags have no closing tags</li>
+                    <li>We're about to have a rundown below:</li>
+                </ul>
+                <hr>
+                <form action="/Users/Leon/Documents/Leon School/Leon CoCurricular/html/data/sample.txt" method="POST" id="Users">
+                    <label for="username">Username: </label>
+                    <input type="text" placeholder="username" name= "username" id= "Username">
+                    <br>
+
+                    <label for="password">Password: </label>
+                    <input type="password" placeholder="password" name="password" id= "Password">
+                    <br>
+                
+                </form>
+                <ul>
+                    <li>In the form above,the password and text input types have been put to use.</li>
+                    <li>among them are the following:
+                        <ol>
+                            <li>color</li>
+                            <li>number</li>
+                            <li>time</li>
+                            <li>week</li>
+                            <li>checkbox</li>
+                            <li>email</li>
+                            <li>file</li>
+                            <li>image</li>
+                            <li>etcetera...</li>
+                        </ol>
+                        
+                    </li>
+                    <li>There's something known as the placeholder attribute which <br>
+                    lets you write something in the empty field before someone begins to fill the form.</li>
+                    <li>You'll notice in the code for the input labels above that the labels have a "for" attribute <br>
+                    which is identical to the "id" attribute of the input fields.</li>
+                    <li>The association makes the label clickable and not just the input field if the input happens to <br>
+                    be a checkbox.</li>
+                    <li>note that only one element on a page can have a given id</li>
+                    <li>labels are inline elements</li>
+                </ul>
+            </article>
+            <hr>
+            <article>
+                <title>
+                    <h1>Buttons</h1>   
+                </title>
+                
+                <p>
+                    <ul>
+                        <li>Buttons have opening and closing tags</li>
+                        <li>WHatever text is put between the two tags is what is used as a label</li>
+                        <li>For a button to perform the action stipulated in the form action, <br>
+                        it has to be inside the form element.</li>]
+                        <li>Below, you'll have an example of the form from before with a button that performs nothing <br>
+                        next to a button that performs the form action.</li>
+                        <li>The only difference between the two is their positions in relation to the form element</li>
+                    </ul>
+                </p>
+                <form action="/Users/Leon/Documents/Leon School/Leon CoCurricular/html/data/sample.txt" method="POST" id="Users">
+                    <label for="username">Username: </label>
+                    <input type="text" placeholder="username" name= "username" id= "Username">
+                    <br>
+
+                    <label for="password">Password: </label>
+                    <input type="password" placeholder="password" name="password" id= "Password">
+                    <br>
+                    <button>Submit</button>
+                </form>
+                <button>Button outside of the form</button>
+                <p>
+                    <ul>
+                        <li>The Button can be nested in a form without having to submit the <br>
+                        form contents and that's simply by changing the button type to <br>
+                        "button".</li>
+                        <li>A less orthodox method of creating a submit button is by creating an input <br>
+                            element with a type value of "Submit".</li>
+                        <li>It is possible to change the text written on a button born of the input element by tampering with its <br>
+                        value attribute. This lets you choose what the button's gwan say.</li>
+                        <li>The name attribute is used for when data is sent.</li>
+                        
+                    </ul>
+                </p>
+                <div>
+                    <h1>Link to Sample</h1>
+                    <section>
+                        <p>
+                            <a href="/Users/Leon/Documents/Leon School/Leon CoCurricular/html/data/sample.html">
+                                <figure>
+                                    <img src="https://static.wikia.nocookie.net/3d2421d7-1bfa-4573-ac2f-3259d9b5dee1" alt="Spongebob with long scroll">
+                                    <figcaption>Spongebob with long scroll</figcaption>
+                                </figure>  
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Refresher.html">Link to first refresher</a>
+                </li>
+                <li> 
+                    <a href="refresher_2.html">Link to second refresher</a>
+                </li>
+                <li>
+                    <a href="Doing.html">Link to first bit of practice</a>
+                </li>
+                <li>
+                    <a href="formsandtables.html">tables and intro to forms</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="moreinputs.html">More on form inputs</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs: Wan Deeper</title>
+</head>
+<body>
+    <Header>
+        <h1>More Inputs</h1>
+    </Header>
+    <body>
+        <article>
+            <p>
+                <ul>
+                    <li>First is the checkbox input which needs to have a label but could <br>
+                    also be set to already checked or not</li>
+                    <li>Getting it checkedto start with is donw by use of the "Checked" attribute</li>
+                    <li>You should find an example below</li>
+                    
+                </ul>
+                
+                <h3>example checkbox</h3>
+                <form action="/what's_een_chosen">
+                    <input type="checkbox" id="check1">
+                    <label for="check1">New York City</label>
+                </form>
+                <hr>
+                <ul>
+                    <li>Next up is the radio button.</li>
+                    <li>The radio button is like having a checklist from which only one option can <br>   
+                        be selected</li>
+                    <li>To connect the options of a radio element, you simply need to make sure that they <br>
+                    share the same name though id and value may be different.</li>
+                </ul>
+                
+                <h3>example radio</h3>
+                <form action="/what's_been_chosen_radio">
+                    <input type="radio" id="check1" name="test" value="check1">
+                    <label for="check1">New York City</label>
+
+                    <input type="radio" id="check2" name="test" value="check2">
+                    <label for="check1">Istanbul</label>
+
+                    <input type="radio" id="check3" name="test" value="check3">
+                    <label for="check1">Los Angeles</label>
+                </form>
+
+                <ul>
+                    <li>When submitting a radio, what is sent to the action link is the value of the radio</li>
+                </ul>
+                <hr>
+
+                <ul>
+                    <li>The select input is sort of like a drop down menu</li>
+                    <li>it works by combining functionality of the select element and the option element</li>
+                    <li>within the "select" opening and closing tags lie the "options" opening and <br>
+                    closing tags</li>
+                    <li>The options tags carry an attribute called value which is what is sent to the form action when <br>
+                    a user selects an option.</li>
+                    <li>Below is an example of a select input:</li>
+                    <br>
+                </ul>
+                <h3>Select input example</h3>
+                <form action="/what's_been_chosen_select">
+                    <label for="choosedown">Select the city you would like to fly to below: </label>
+                    <select name="cities" id="choosedown">
+                        <option value="">--choose--</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Istanbul">Istanbul</option>
+                        <option value="Warsaw">Warsaw</option>
+                        <option value="Khartoum">Khartoum</option>
+                        <option value="NewYork">New York</option>
+                    </select>
+                </form>
+                <ul>
+                    <li>It's worth noting thast you could have something preselected by keying in the <br>
+                    "selected" attribute in the options opening tag.</li>
+                </ul>
+               <hr>
+               <br>
+
+               <ul>
+                   <li>Apart from the above is also the Range type of input.</li>
+                   <li>It creates a slider which allows users to pick a value on a limited spectrum</li>
+                   <li>The actual range of the slider is set using the mmin and max attributes as well as the <br>
+                    step attribute.</li>
+                    <li>The step attribute is particularly important cause it allows progression in <br>
+                    bits.</li>
+                    <li>An initial vqlue can be set usinf the "value" control.</li>
+                   <li>Below should be an example: </li>
+               </ul>
+               <h3>Range input example</h3>
+               <form action="/where">
+                        <label for="volume">Set the volume level: </label>
+                        <input type="range" id="volume" min="0" max="100" step="10" value="20">
+                </form>
+                <hr>
+                <br>
+
+                <ul>
+                    <li>A textarea is pretty much what you see in websites asking people to <br>
+                    submit information</li>
+                    <li>You can set the size of the textarea using the "rows" and "cols" attributes in the input <br>
+                    opening tags.</li>
+                    <li>You can also give it a placeholder.</li>
+                    <li>Unlike other input methods, you don't have to specify it as an input element and it actually has a closing tag.</li>
+                    <li>Neither do you have to put it in a form element.</li>
+                </ul>
+                <h3>Textarea in action</h3>
+                <form action="/what">
+                    <label for="areacode">What would you like to say about inputs so far?</label>
+                    <br>
+                    <textarea id="areacode" cols="50" rows="50"></textarea>
+                </form>
+                <hr>
+                <br>
+               
+            </p>
+        </article>
+        <hr>
+        <footer>
+            <!-- <h3>Application of select on footer nav</h3>
+            <nav>
+                <form action="C:\Users\Leon\Documents\Leon School\Leon CoCurricular\html" method="GET">
+                    <label for="choosedown">Select the chapter you would like to turn to below: </label>
+                    <select name="Chapters" id="choosedown">
+                        <option value="">--choose--</option>
+                        <option value="Refresher.html">First Refresher</option>
+                        <option value="refresher_2.html">Second Refresher</option>
+                        <option value="Doing.htm">FIrst bit of practice post refresher</option>
+                        <option value="formsandtables.html">Tables</option>
+                        <option value="forms.html">First bit learned about forms</option>
+                    </select>
+                    <button>Go!</button>
+                </form> -->
+
+                <ul>
+                    <li><a href="Refresher.html">Link to first refresher</a></li>
+                    <li><a href="refresher_2.html">Link to second refresher</a></li>
+                    <li><a href="Doing.html">Link to first bit of practice</a></li>
+                    <li><a href="formsandtables.html">tables</a></li>
+                    <li><a href="forms.html">First bit learned about forms</a></li>
+                    <hr>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</body>
+</html>
