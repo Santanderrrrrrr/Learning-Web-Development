@@ -1,0 +1,137 @@
+body{
+    background-color: antiquewhite;
+    overflow-y: hidden;
+    align-items: center;
+
+}
+.first{
+    background-color: rgb(203, 255, 196);
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    width: 100vw;
+    height: 20vh;
+
+}
+/* 
+First turn on flex using display: flex
+then choose the flex direction using flex-direction: column/row
+    column sets the cross axis as the main axis
+    row keeps the main axis running across
+align-items: center/baseline/flex-start positions items along the cross axis/y axis
+justify-content: flex-start/flex-end positions elements along the main axis/x axis
+flex-wrap: wrap/nowrap allows elements to flow into the next colum/row 
+    when they get too big to fit in a single file.
+align-content: space-around/space-between/flex-start chooses how much space is between elements
+    align-content doesn't work if the fex-wrap isn't turned on
+    align-content: overrides align-items.
+align-self: is an attribute given to single elements
+    its used on the pink div below.
+    Align self does not work if align-items/align-content is set
+
+ */
+
+.fir{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 226, 96);
+}
+.fir:nth-of-type(1){
+    background-color: blueviolet;
+
+}
+.fir:nth-of-type(2){
+    background-color: rgb(226, 43, 144);
+    align-self:flex-end;
+}
+.fir:nth-of-type(3){
+    background-color:rgb(226, 43, 43);
+}
+.fir:nth-of-type(4){
+    background-color: rgb(226, 110, 43);
+}
+
+
+/* 
+flex sizing:  
+    flex-basis is the initial size of the elements added to a container 
+        It might either be a width or height depending on the flex direction
+    flex-grow::
+        controls the amount of space an element will take up if there is available
+        space
+        Flex-grow can be given to more than one element in a container and has a unitless
+        value which seems to be a ratio to which the elements growing are to share the 
+        space
+        When you shrink the container, the elemetns spill over and 
+        the ones set to flex grow occupy more space. as per their growth settings.
+        With flex-grow, though, the shrinking does not fall below the originally set 
+        size.
+    Flex-shrink determines how much something should shrink when there is a shrinkage in
+        effect.
+        a higher ratio results in a faster shrink rate.
+        */
+
+
+section.second{
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: navy solid 5px;
+}
+
+div.sec{
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    flex-basis: 400px;
+}.sec:nth-of-type(1){
+    background-color: rgb(32, 30, 30);
+    flex-shrink: 2;
+}.sec:nth-of-type(2){
+    background-color: #646464;
+    flex-shrink: 1;
+}.sec:nth-of-type(3){
+    background-color: #969696;
+    flex-grow: 2;
+}.sec:nth-of-type(4){
+    background-color: #b8b8b8;
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+
+/* The shorthand for tje above three properties is 
+    "flex". It allows you to set the flex basis, grow and shrink in one go
+    The order is flex-grow,flex-shrink and flex-basis when theres three in the 
+    input, when theres onlu 2 it could be either flex-grow|flex-shrink or flex-grow|flex-basis
+    A single unitless attribute value digit indicates flex-grow and a unit value indicates flex-basis*/
+
+    h2{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .threeSections{
+        width: 80%;
+        margin: 0 auto;
+        border: 5px solid black;
+        height: 500px;
+        display: flex;
+
+    }
+    .threeSections .sidebar{
+        background-color: #6930c3;
+        flex:1;
+    }
+    .threeSections .maincontent{
+        background-color: #80ffdb;
+        flex: 1;
+
+    }
